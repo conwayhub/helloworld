@@ -1,0 +1,34 @@
+var savings = 0;
+var monthMany = 0;
+var macBook = 900;
+var rent = 75;
+var travelExpenses = 65;
+var food = 60;
+var social = 60;
+
+
+function month(pay){
+  monthMany = monthMany + 1;
+  thisMonth = savings + pay * 4 - rent - travelExpenses - food - social;
+  function nationalInsurance(savings){
+    var nI = thisMonth % 0.12;
+  thisMonth - nI;
+  nI = 0;}
+  savings = thisMonth;
+  console.log('You have saved: ' + savings)
+lapTop();
+thisMonth = 0;
+}
+
+function lapTop(){
+  if (savings >= macBook) {
+    console.log('Huzzah, it took: ' + monthMany + ' months to afford a laptop');}
+  else {console.log('Still no laptop for you...')}
+}
+
+month(69);
+month(135);
+month(105);
+month(58);
+month(142);
+month(112);
