@@ -1,3 +1,6 @@
+//Just practicing functions in Javascript while also trying to answer the immortal question:  
+//Based on my last six weeks wages, how many months would I have to save for to afford a nice new laptop?
+
 var savings = 0;
 var monthMany = 0;
 var macBook = 900;
