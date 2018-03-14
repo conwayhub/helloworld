@@ -1,0 +1,79 @@
+//still just farting around with the tiny amount of javascript I now know
+
+var dragonDmg = 0;
+var punch = ' lands a powerful punch on the dragon, commencing fisticuffs';
+var botherDragon = true;
+var outtie = false;
+var treeAdvice = 0;
+
+function finale(){
+  if (dragonDmg >= 50) {console.log('Bloody and tired from many hours of battle with you, the mighty dragon gives a final roar, before flying off into the sky.');
+  outtie = true;} else {console.log('Your blows land hard, but the Dragon remains unphased.  It lets out a mighty roar, and blows a puff of smoke in your face.');}
+}
+function druidFinale(){
+  if (treeAdvice >= 5) {console.log('. While battle rages inside the cage, the council of trees finally come to a conclusion, and the Druid rushes into the cave to resolve matters between the party and the dragon.  A peaceful accord is reached, and the Dragon leaves the party alone with half of it\'s gold.');
+  var outtie = true;} else {console.log('It\'s a tough problem, the trees need time to think about it.');}
+}
+
+console.log('Your party creeps into the darkest room of the final dungeon, a huge red dragon is sleeping on a mountain of gold...');
+if (botherDragon) {
+  console.log (' \'Hey Dragon Jerk,\' You yell, \'We\'re gonna kick your Dragon butt.\'  The dragon opens one, judgemental eye, before flapping it\'s huge wings, and letting out a fearsome roar... Looks like it\'s time to battle, but who will you send?');
+} else {
+  console.log('Wisely, you sing a gentle lullaby and back out of the cave, leaving the Dragon unmolested.');}
+
+
+  function wizard(wiz){
+  if (outtie) {console.log('With the Dragon gone, the Wizard fills his pockets with gold.');}
+  else {var spells = ' summoning up a hot and spicy fireball, and flinging it mightily at the Dragon. '
+    console.log('The Wizard' + punch + ' before ' + spells +'This done, he strokes his beard smugly.');
+    dragonDmg = dragonDmg + (wiz);
+        console.log('Dragon damage:' + dragonDmg + '/50')
+    finale();
+       }
+}
+
+function fighter(fig){
+  if (outtie) {console.log('With the Dragon gone, the Fighter doesn\'t know what to do.  She looks forlorn.');}
+  else {var sword = ' boldly waggling her sword at the the lizard. '
+    console.log('The Fighter ' + punch + ' before ' + sword +'This done, she reflect on her former glory.');
+    dragonDmg = dragonDmg + (fig);
+        console.log('Dragon damage:' + dragonDmg + '/50')
+    finale();}
+}
+function rogue(rog){
+  if (outtie) {console.log('With the Dragon gone, the rogue immediately checks the gold for traps.');}
+  else {var sneak = ' sneakily, and with great secrecy, poking the dragon with their dagger. '
+    console.log('The Rogue' + punch + ' before ' + sneak +'This done, they immediately start running in the opposite direction of the fight.');
+    dragonDmg = dragonDmg + (rog);
+        console.log('Dragon damage:' + dragonDmg + '/50')
+    finale();
+}}
+function cleric(cle){
+  if (outtie) {console.log('With the Dragon gone, the cleric returns to his chief duty of yelling at the rogue.');}
+  else {var mace = ' sanctimoniously clubbing the Dragon over the head with his holy mace. '
+    console.log('The Cleric' + punch + ' before ' + mace +'This done, the Cleric notices everything that everyone else has done wrong.');
+    dragonDmg = dragonDmg + (cle);
+    console.log('Dragon damage:' + dragonDmg + '/50')
+        finale();
+}}
+function druid(dru){
+  if (outtie) {console.log('With the Dragon gone, the Wizard fills his pockets with gold.');}
+  else {var trees = ' she exits the cave and asks the trees what they think should be done to resolve the fight with the dragon. '
+  var noPunch = ' would never punch a Dragon, what kind of monster do you take them for?'
+    console.log('The Druid' + noPunch + ' instead ' + trees);
+    console.log('Dragon damage:' + dragonDmg + '/50')
+    treeAdvice = treeAdvice + (dru);
+    druidFinale();
+       }}
+
+wizard(7);
+fighter(9);
+rogue(5);
+druid(1);
+cleric(8);
+wizard(7);
+fighter(9);
+rogue(5);
+druid(1);
+cleric(8);
+rogue(5);
