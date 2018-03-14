@@ -65,6 +65,9 @@ function druid(dru){
     treeAdvice = treeAdvice + (dru);
     druidFinale();
        }}
+       
+//I just called all my 'party' functions to test them / test whether the 'outtie' variable was working right, 
+//this is clearly not an essential component of this important dragonfighty code.
 
 wizard(7);
 fighter(9);
