@@ -12,7 +12,7 @@ function finale(){
 }
 function druidFinale(){
   if (treeAdvice >= 5) {console.log('. While battle rages inside the cage, the council of trees finally come to a conclusion, and the Druid rushes into the cave to resolve matters between the party and the dragon.  A peaceful accord is reached, and the Dragon leaves the party alone with half of it\'s gold.');
-  var outtie = true;} else {console.log('It\'s a tough problem, the trees need time to think about it.');}
+  outtie = true;} else {console.log('It\'s a tough problem, the trees need time to think about it.');}
 }
 
 console.log('Your party creeps into the darkest room of the final dungeon, a huge red dragon is sleeping on a mountain of gold...');
@@ -57,7 +57,7 @@ function cleric(cle){
         finale();
 }}
 function druid(dru){
-  if (outtie) {console.log('With the Dragon gone, the Wizard fills his pockets with gold.');}
+  if (outtie) {console.log('With the Dragon gone, the Druid climbs back into the foliage, away from prying human eyes.');}
   else {var trees = ' she exits the cave and asks the trees what they think should be done to resolve the fight with the dragon. '
   var noPunch = ' would never punch a Dragon, what kind of monster do you take them for?'
     console.log('The Druid' + noPunch + ' instead ' + trees);
