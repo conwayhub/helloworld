@@ -1,0 +1,25 @@
+var wizard = 'The wizard is tantalized by the necromancers power.'
+var rogue = 'The rogue fires blindly at the necromancer in terror.'
+var fighter = 'The fighter swings her sword through dead flesh, in a panic.'
+var healer = 'The healer calls upon the power of goodness to rain down upon this evil place.'
+
+var vileNecromancer=[wizard,rogue,fighter,healer];
+
+for (var i = 0; i < vileNecromancer.length; i++)
+{    if (i >4 ) break;
+vileNecromancer.push('The vile necromancer\'s wounds are festering.') 
+  console.log(vileNecromancer[i]);
+
+}
+
+console.log('Suddenly, a tide of corpses flood across the necromancer, healing all that ails him.')
+vileNecromancer.pop(); 
+vileNecromancer.pop();
+vileNecromancer.pop();
+vileNecromancer.pop();
+vileNecromancer.pop();
+for (var i = 0; i < vileNecromancer.length; i++)
+{  console.log(vileNecromancer[i]);
+
+}
+console.log('But the Necromancer seems fine.  What a jerk.')
