@@ -1,0 +1,23 @@
+//still practicing.  also just going to accept that all of my practicing will be about ridiculous D&D adventures.
+
+var trollHealth = 5;
+var i = 0;
+var fighter = 'The fighter is ready to kick some troll butt...';
+var wizard ='The wizard would like to study the troll, but time is short, so they opt for a fireball instead.';
+var rogue ='The rogue likes the look of the troll\'s fine coinpurse, so they go in for a speedy backstab.';
+var cleric ='The cleric bashes the troll\'s head in with a mace, for purely spiritual reasons.';
+var troll ='The Troll has discovered that these idols have such feet of clay, it perishes, disillusioned with the whole institution of heroism.';
+var mightyHeroes = [fighter , wizard , rogue , cleric , troll];
+
+console.log(`A proud and fearsome troll is walking down the road.  They have ${trollHealth} hitpoints.`);
+console.log('But who\'s this?  Our good friends the adventurers are coming to say hello...');
+            
+while (trollHealth > 0) {
+  console.log(mightyHeroes[i]);
+  i++
+  trollHealth--
+  console.log(`The Troll is reduced to a paltry ${trollHealth} hitpoints.`);
+}
+
+if (trollHealth >0){control.log('Run, Troll, Run.  The party are still upset at getting their butts kicked by the vile necromancer, they\'re trying to overcompensate...');} 
+else {console.log('Well I hope you\'re proud of yourself, you rotten adventurers.  That troll was a pillar of the community.');}
