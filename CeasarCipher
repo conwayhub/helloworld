@@ -1,0 +1,21 @@
+// I know this is a hot mess, but I am disproportionately proud of it.  One day when I am better at Javascript I'll write something to solve 
+// a Ceasar cipher properly (where you get the late letters by going back to a, b, c) without sucking the universe into a black hole of infinite loops.
+
+var array = 'khoor.zruog#';
+let solution=[];
+let ceasar = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',' ','!',',','.','#']
+
+function decode(){for (let arrayx =0 ; arrayx < array.length; arrayx++)
+
+{for (let ceasarx =0 ; ceasarx < ceasar.length; ceasarx++)
+
+{  if (array[arrayx] === ceasar[ceasarx]) 
+  
+{ solution.push(ceasar[ceasarx-3]);
+}
+}
+}
+}
+function greet(){
+  decode();
+return solution.join(''); }
